@@ -16,7 +16,7 @@ def convert_annotation():
     # basename_no_ext = os.path.splitext(basename)[0]
 
     # in_file = open(dir_path + '/' + basename_no_ext + '.xml')
-    dirs = '/Users/rx/NTU/MDP/MDP-CV.v6i.voc/tempp/train/'
+    dirs = ''
     count=2800
     for images in os.listdir(dirs):
         count+=1
