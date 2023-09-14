@@ -4,8 +4,8 @@ import pickle
 import xml.etree.ElementTree as ET
 from os import listdir, getcwd
 from os.path import join
-# dirs = '/Users/rx/NTU/MDP/MDP-CV.v6i.voc/train/'
 from PIL import Image
+#for naming of classes, convert to yolo: class name in voc: index for class name in yolo
 dict2 = {'11': '0', '12': '1', '13': '2', '14': '3', '15': '4', '16': '5', '17': '6', '18': '7', '19': '8', '20': '9', '21': '10', '22': '11', '23': '12', '24': '13', '25': '14', '26': '15', '27': '16', '28': '17', '29': '18', '30': '19', '31': '20', '32': '21', '33': '22', '34': '23', '35': '24', '36': '25', '37': '26', '38': '27', '39': '28', '40': '29', 'wa': '30'}
 
 # Print each item on a new line
@@ -15,8 +15,7 @@ def convert_annotation():
     # print(image_path)
     # basename_no_ext = os.path.splitext(basename)[0]
 
-    # in_file = open(dir_path + '/' + basename_no_ext + '.xml')
-    dirs = ''
+    dirs = ''  #directory of the image files with xml files in one directory
     count=2800
     for images in os.listdir(dirs):
         count+=1
